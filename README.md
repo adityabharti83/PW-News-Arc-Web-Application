@@ -1,4 +1,4 @@
-# PW-News-Arc-Web-Application
+# PW-News-Arc-Web-Application (On-Going)
 
 News Arc Web Application
 The News Arc Web Application is an innovative platform designed to redefine news consumption by providing personalized and engaging experiences. Developed as part of an internship with Physics Wallah Pvt. Ltd., this project emphasizes seamless navigation, user engagement tracking, and intelligent content delivery.
