@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Feed - News Arc</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h4>News Feed Menu</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="/dashboard" class="btn btn-link">Dashboard</a></li>
+                            <li class="list-group-item"><a href="/recent-news" class="btn btn-link">Recent News</a></li>
+                            <li class="list-group-item"><a href="/following-news" class="btn btn-link">Following News</a></li>
+                            <li class="list-group-item"><a href="/profile" class="btn btn-link">Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feed Content -->
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Your Personalized News Feed</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- News Article 1 -->
+                        <div class="media mb-4">
+                            <img src="https://via.placeholder.com/100" class="mr-3" alt="news-image">
+                            <div class="media-body">
+                                <h5 class="mt-0"><a href="#">Breaking News Article 1</a></h5>
+                                <p>This is a short description of the news article content. Click to read more...</p>
+                                <p><small>Posted 2 hours ago</small></p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary btn-sm">Like</button>
+                                    <button class="btn btn-outline-info btn-sm">Comment</button>
+                                    <button class="btn btn-outline-secondary btn-sm">Share</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News Article 2 -->
+                        <div class="media mb-4">
+                            <img src="https://via.placeholder.com/100" class="mr-3" alt="news-image">
+                            <div class="media-body">
+                                <h5 class="mt-0"><a href="#">Another Breaking News Article</a></h5>
+                                <p>This article describes a different news event. Click to learn more...</p>
+                                <p><small>Posted 3 hours ago</small></p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary btn-sm">Like</button>
+                                    <button class="btn btn-outline-info btn-sm">Comment</button>
+                                    <button class="btn btn-outline-secondary btn-sm">Share</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News Article 3 -->
+                        <div class="media mb-4">
+                            <img src="https://via.placeholder.com/100" class="mr-3" alt="news-image">
+                            <div class="media-body">
+                                <h5 class="mt-0"><a href="#">Another Interesting News Piece</a></h5>
+                                <p>This is a description for the third news article. Click to explore...</p>
+                                <p><small>Posted 4 hours ago</small></p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary btn-sm">Like</button>
+                                    <button class="btn btn-outline-info btn-sm">Comment</button>
+                                    <button class="btn btn-outline-secondary btn-sm">Share</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News Article 4 -->
+                        <div class="media mb-4">
+                            <img src="https://via.placeholder.com/100" class="mr-3" alt="news-image">
+                            <div class="media-body">
+                                <h5 class="mt-0"><a href="#">A Fascinating Topic in the News</a></h5>
+                                <p>Description of the article goes here. Click to read more...</p>
+                                <p><small>Posted 6 hours ago</small></p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary btn-sm">Like</button>
+                                    <button class="btn btn-outline-info btn-sm">Comment</button>
+                                    <button class="btn btn-outline-secondary btn-sm">Share</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- More News Button -->
+                        <div class="text-center mt-4">
+                            <button class="btn btn-primary">Load More News</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

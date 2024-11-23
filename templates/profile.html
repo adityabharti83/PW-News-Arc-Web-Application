@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - News Arc</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-header {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .profile-header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .profile-header h2 {
+            margin-top: 10px;
+        }
+
+        .profile-header p {
+            color: #6c757d;
+        }
+
+        .tab-content {
+            margin-top: 20px;
+        }
+
+        .post-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 10px;
+        }
+
+        .post-item img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Profile Header -->
+            <div class="col-md-12 profile-header text-center">
+                <img src="https://via.placeholder.com/150" alt="Profile Picture">
+                <h2>John Doe</h2>
+                <p>@johndoe | News Enthusiast</p>
+                <p>Followed 150 News Categories</p>
+                <p>
+                    <a href="/edit-profile" class="btn btn-primary">Edit Profile</a>
+                    <a href="/logout" class="btn btn-danger">Log Out</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Profile Navigation Tabs -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs" id="profileTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="newsFeedTab" data-toggle="tab" href="#newsFeed" role="tab" aria-controls="newsFeed" aria-selected="true">News Feed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="savedNewsTab" data-toggle="tab" href="#savedNews" role="tab" aria-controls="savedNews" aria-selected="false">Saved News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="followedTopicsTab" data-toggle="tab" href="#followedTopics" role="tab" aria-controls="followedTopics" aria-selected="false">Followed Topics</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="profileTabsContent">
+                    <!-- News Feed Tab -->
+                    <div class="tab-pane fade show active" id="newsFeed" role="tabpanel" aria-labelledby="newsFeedTab">
+                        <div class="post-item">
+                            <h5>Breaking News: The Latest Market Trends</h5>
+                            <img src="https://via.placeholder.com/800x400" alt="news-1">
+                            <p>Summary of the latest trends in the market, including some interesting statistics and insights...</p>
+                            <button class="btn btn-outline-primary btn-sm">Like</button>
+                            <button class="btn btn-outline-info btn-sm">Comment</button>
+                            <button class="btn btn-outline-secondary btn-sm">Share</button>
+                        </div>
+
+                        <div class="post-item">
+                            <h5>Global Politics: New Economic Policies</h5>
+                            <img src="https://via.placeholder.com/800x400" alt="news-2">
+                            <p>Details about the new economic policies that are being introduced across the globe...</p>
+                            <button class="btn btn-outline-primary btn-sm">Like</button>
+                            <button class="btn btn-outline-info btn-sm">Comment</button>
+                            <button class="btn btn-outline-secondary btn-sm">Share</button>
+                        </div>
+                    </div>
+
+                    <!-- Saved News Tab -->
+                    <div class="tab-pane fade" id="savedNews" role="tabpanel" aria-labelledby="savedNewsTab">
+                        <div class="post-item">
+                            <h5>Saved Article: Tech Innovations 2024</h5>
+                            <img src="https://via.placeholder.com/800x400" alt="news-3">
+                            <p>This article discusses the latest innovations in the technology field...</p>
+                        </div>
+
+                        <div class="post-item">
+                            <h5>Saved Article: Health & Wellness Tips</h5>
+                            <img src="https://via.placeholder.com/800x400" alt="news-4">
+                            <p>Health and wellness tips to stay fit and healthy during the busy workweek...</p>
+                        </div>
+                    </div>
+
+                    <!-- Followed Topics Tab -->
+                    <div class="tab-pane fade" id="followedTopics" role="tabpanel" aria-labelledby="followedTopicsTab">
+                        <ul class="list-group">
+                            <li class="list-group-item">Technology</li>
+                            <li class="list-group-item">Business & Finance</li>
+                            <li class="list-group-item">Health & Wellness</li>
+                            <li class="list-group-item">Global Politics</li>
+                            <li class="list-group-item">Sports</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

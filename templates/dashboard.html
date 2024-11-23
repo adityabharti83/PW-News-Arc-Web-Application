@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - News Arc</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h4>User Menu</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#personal-info" class="btn btn-link">Personal Info</a></li>
+                            <li class="list-group-item"><a href="#recent-news" class="btn btn-link">Recent News</a></li>
+                            <li class="list-group-item"><a href="#shared-news" class="btn btn-link">Shared News</a></li>
+                            <li class="list-group-item"><a href="#following-news" class="btn btn-link">Following News</a></li>
+                            <li class="list-group-item"><a href="/logout" class="btn btn-link text-danger">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <!-- Personal Information Section -->
+                <div id="personal-info" class="card mb-4">
+                    <div class="card-header">
+                        <h5>Personal Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6>Username: <span id="username">JohnDoe</span></h6>
+                        <h6>Email: <span id="email">johndoe@example.com</span></h6>
+                        <button class="btn btn-primary mt-2" data-toggle="collapse" data-target="#edit-personal-info">Edit Details</button>
+                    </div>
+                </div>
+
+                <!-- Edit Personal Information Section -->
+                <div id="edit-personal-info" class="collapse mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Edit Personal Information</h5>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="new-username">New Username</label>
+                                    <input type="text" class="form-control" id="new-username" value="JohnDoe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-email">New Email</label>
+                                    <input type="email" class="form-control" id="new-email" value="johndoe@example.com">
+                                </div>
+                                <button type="submit" class="btn btn-success">Update</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recently Read News Section -->
+                <div id="recent-news" class="card mb-4">
+                    <div class="card-header">
+                        <h5>Recently Read News</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="#">News Article 1</a></li>
+                            <li><a href="#">News Article 2</a></li>
+                            <li><a href="#">News Article 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Shared News Section -->
+                <div id="shared-news" class="card mb-4">
+                    <div class="card-header">
+                        <h5>Shared News</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="#">Shared News Article 1</a></li>
+                            <li><a href="#">Shared News Article 2</a></li>
+                            <li><a href="#">Shared News Article 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Following News Section -->
+                <div id="following-news" class="card mb-4">
+                    <div class="card-header">
+                        <h5>Following News</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="#">Following News Article 1</a></li>
+                            <li><a href="#">Following News Article 2</a></li>
+                            <li><a href="#">Following News Article 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

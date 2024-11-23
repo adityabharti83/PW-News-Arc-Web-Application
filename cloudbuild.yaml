@@ -1,0 +1,8 @@
+# cloudbuild.yaml
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy']
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['sql', 'connect', 'your-database-instance']
+
+timeout: '1200s'
